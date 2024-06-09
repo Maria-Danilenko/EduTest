@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\models\\test\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\test\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\models\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 272,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "D:\\backend\\WebApplication1\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\backend\\WebApplication1\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwA4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:49:37.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\backend\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:15:42.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Test.cs",
+              "DocumentMoniker": "D:\\backend\\WebApplication1\\Models\\Test\\Test.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Test\\Test.cs",
+              "ToolTip": "D:\\backend\\WebApplication1\\Models\\Test\\Test.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Test\\Test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T13:06:52.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\backend\\WebApplication1\\Models\\Test\\Question.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Test\\Question.cs",
+              "ToolTip": "D:\\backend\\WebApplication1\\Models\\Test\\Question.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Test\\Question.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T13:04:29.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestsController.cs",
+              "DocumentMoniker": "D:\\backend\\WebApplication1\\Controllers\\TestsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TestsController.cs",
+              "ToolTip": "D:\\backend\\WebApplication1\\Controllers\\TestsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TestsController.cs",
+              "ViewState": "AQIAAFkCAAAAAAAAAADwvyIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:03:29.981Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
