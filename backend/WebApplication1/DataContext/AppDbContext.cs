@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
-using Microsoft.Data.SqlClient;
-using WebApplication1.Models.Test;
-using WebApplication1.Models.Profile;
+using WebApplication1.Models.MLModule;
 using WebApplication1.Models.Other;
+using WebApplication1.Models.Profile;
+using WebApplication1.Models.Test;
 
 namespace WebApplication1.DataContext
 {
@@ -27,5 +28,8 @@ namespace WebApplication1.DataContext
         public DbSet<Assignment> Assignment { get; set; }
         public DbSet<StudentTest> Student_Test { get; set; }
         public DbSet<StudentOpenQuestion> Student_Open_Question { get; set; }
+        public DbSet<Student_Analysis> Student_Analysis { get; set; }
+        public DbSet<Student_Analysis_Direction> Student_Analysis_Direction { get; set; }
+        public DbSet<Student_Analysis_Weak_Topics> Student_Analysis_Weak_Topics { get; set; }
     }
 }

@@ -87,28 +87,38 @@ function TestCreatingPage() {
     const teacherId = parseInt(user.id);
 
     const questionsWithTypeId = values.questions.map((question) => {
-      if (question.questionType === 1) {
-        const correctAnswerIndex = question.variants[0].correctAnswer;
-        question.variants[correctAnswerIndex].isCorrect = true;
-      }
 
-      const variants =
-        question.questionType === 3
-          ? []
-          : question.variants?.map((variant) => ({
-              ...variant,
-              isCorrect: variant.isCorrect || false,
-            })) || [];
+  if (question.questionType === 1) {
+    const correctAnswerIndex = question.correctAnswer;
 
-      maxScore += question.marks;
+    if (
+      correctAnswerIndex !== undefined &&
+      question.variants &&
+      question.variants[correctAnswerIndex]
+    ) {
+      question.variants[correctAnswerIndex].isCorrect = true;
+    }
+  }
 
-      return {
-        ...question,
-        questionTypeId: question.questionType,
-        variants: variants,
-        questionType: undefined,
-      };
-    });
+  const variants =
+    question.questionType === 3
+      ? []
+      : (question.variants || [])
+          .filter(v => v)
+          .map(variant => ({
+            ...variant,
+            isCorrect: variant.isCorrect || false,
+          }));
+
+  maxScore += question.marks;
+
+  return {
+    ...question,
+    questionTypeId: question.questionType,
+    variants: variants,
+    questionType: undefined,
+  };
+});
 
     const transformedValues = {
       ...values,

@@ -28,33 +28,40 @@ function TestEditingPage() {
   const navigate = useNavigate();
   const { testId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const loadData = useCallback(async () => {
     setIsLoading(true);
     try {
-      const [subjectsResponse, questionTypesResponse, testResponse] = await Promise.all([
-        axios.get("/api/Profile/subject"),
-        axios.get("/api/Tests/question_types"),
-        axios.get(`/api/Tests/get_test/${testId}`)
-      ]);
-  
+      const [subjectsResponse, questionTypesResponse, testResponse] =
+        await Promise.all([
+          axios.get("/api/Profile/subject"),
+          axios.get("/api/Tests/question_types"),
+          axios.get(`/api/Tests/get_test/${testId}`),
+        ]);
+
       const subjects = subjectsResponse.data;
-      const questionTypes = questionTypesResponse.data.map((qt) => ({ ...qt, key: qt.id }));
+      const questionTypes = questionTypesResponse.data.map((qt) => ({
+        ...qt,
+        key: qt.id,
+      }));
       const data = testResponse.data;
-  
+
       const questionsWithCorrectAnswers = data.questions.map((question) => {
-        const correctAnswerIndex = question.variants.findIndex((variant) => variant.isCorrect);
+        const correctAnswerIndex = question.variants.findIndex(
+          (variant) => variant.isCorrect
+        );
+
         return {
           ...question,
           questionId: question.id,
+          correctAnswer: correctAnswerIndex >= 0 ? correctAnswerIndex : null,
           variants: question.variants.map((variant) => ({
             ...variant,
             variantId: variant.id,
-            correctAnswer: correctAnswerIndex >= 0 ? correctAnswerIndex : null,
           })),
         };
       });
-  
+
       form.setFieldsValue({
         testName: data.testName,
         description: data.description,
@@ -63,11 +70,12 @@ function TestEditingPage() {
         subjectId: data.subjectId,
         questions: questionsWithCorrectAnswers,
       });
-  
+
       setSubjects(subjects);
       setQuestionTypes(questionTypes);
     } catch (error) {
-      const errorMessage = error.response?.data?.message || error.message || "Unknown error";
+      const errorMessage =
+        error.response?.data?.message || error.message || "Unknown error";
       notification.error({
         message: "Fetching Error",
         description: `Failed to fetch data: ${errorMessage}`,
@@ -76,10 +84,10 @@ function TestEditingPage() {
       setIsLoading(false);
     }
   }, [testId, form]);
-  
+
   useEffect(() => {
     loadData();
-  }, [loadData]); 
+  }, [loadData]);
 
   const isFormValid = (questions) => {
     return questions.every((question) => {
@@ -113,25 +121,28 @@ function TestEditingPage() {
     const teacherId = parseInt(user.id);
 
     const questionsWithTypeId = values.questions.map((question) => {
-      if (question.questionTypeId === 1) {
-        question.variants.forEach((variant) => (variant.isCorrect = false));
-        const correctAnswerIndex = question.variants[0].correctAnswer;
-        question.variants[correctAnswerIndex].isCorrect = true;
-      }
-
-      const variants =
+      let variants =
         question.questionTypeId === 3
           ? []
           : question.variants?.map((variant) => ({
               ...variant,
-              isCorrect: variant.isCorrect || false,
+              isCorrect: !!variant.isCorrect,
             })) || [];
+
+      if (question.questionTypeId === 1) {
+        const correctAnswerIndex = question.correctAnswer;
+
+        variants = variants.map((variant, idx) => ({
+          ...variant,
+          isCorrect: idx === correctAnswerIndex,
+        }));
+      }
 
       maxScore += question.marks;
 
       return {
         ...question,
-        variants: variants,
+        variants,
         questionType: undefined,
       };
     });
@@ -157,10 +168,23 @@ function TestEditingPage() {
         navigate("/tests-list");
       })
       .catch((error) => {
+        const data = error.response?.data;
+        let description = "An error occurred during test updating.";
+
+        if (typeof data === "string") {
+          description = data;
+        } else if (data && data.errors) {
+          const messages = Object.values(data.errors).flat();
+          description = messages.join(" ");
+        } else if (data && (data.title || data.detail)) {
+          description = `${data.title ?? ""} ${data.detail ?? ""}`.trim();
+        } else if (error.message) {
+          description = error.message;
+        }
+
         notification.error({
           message: "Test Updating Failed",
-          description:
-            error.response?.data || "An error occurred during test updating.",
+          description,
         });
       });
   };
@@ -387,9 +411,7 @@ function TestEditingPage() {
                                             "isCorrect",
                                           ]}
                                           valuePropName="checked"
-                                          style={{
-                                            margin: "10px 8px 0px 5px",
-                                          }}
+                                          style={{ margin: "10px 8px 0px 5px" }}
                                         >
                                           <Checkbox>Is Correct</Checkbox>
                                         </Form.Item>

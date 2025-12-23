@@ -220,6 +220,14 @@ namespace WebApplication1.Controllers
             return Ok();
         }
 
+        [Authorize]
+        [HttpGet("students_class/{classId}")]
+        public async Task<List<Student>> GetStudentsInClassAsync(int classId)
+        {
+            return await GetStudentsByClassIdAsync(classId);
+        }
+
+
         private async Task<List<Student>> GetStudentsByClassIdAsync(int classId)
         {
             var students = await _context.Student

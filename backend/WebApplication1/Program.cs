@@ -1,10 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using WebApplication1.DataContext;
-using Microsoft.OpenApi.Models;
-using WebApplication4.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Text.Json.Serialization;
+using WebApplication1.DataContext;
+using WebApplication4.Services;
 public class Program
 {
     public static void Main(string[] args)
@@ -35,7 +36,14 @@ public class Startup
     {
         string connection = "Server=DESKTOP-GF8REUK\\SQLEXPRESS;Database=EduTestDB;Trusted_Connection=true;Encrypt=False";
 
-        services.AddControllers();
+        //services.AddControllers();
+        services.AddControllers()
+            .AddJsonOptions(opts =>
+            {
+                opts.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+                opts.JsonSerializerOptions.WriteIndented = true;
+            });
+
         services.AddEndpointsApiExplorer();
 
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));

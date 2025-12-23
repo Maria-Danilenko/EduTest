@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\backend\\",
+  "WorkspaceRootPath": "D:\\edu-test\\back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\edu-test\\back-end\\webapplication1\\controllers\\mlstudentanalysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\mlstudentanalysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\edu-test\\back-end\\webapplication1\\models\\mlmodule\\studentanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\mlmodule\\studentanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\edu-test\\back-end\\webapplication1\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\edu-test\\back-end\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\models\\test\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\test\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|d:\\backend\\webapplication1\\models\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AAFEDC-C312-4AC0-88B1-B99C1E0B47D3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 272,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "D:\\backend\\WebApplication1\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ProfileController.cs",
-              "ToolTip": "D:\\backend\\WebApplication1\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\ProfileController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwA4AAAAfAAAA",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\edu-test\\back-end\\WebApplication1\\DataContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataContext\\AppDbContext.cs",
+              "ToolTip": "D:\\edu-test\\back-end\\WebApplication1\\DataContext\\AppDbContext.cs",
+              "RelativeToolTip": "WebApplication1\\DataContext\\AppDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:49:37.578Z",
+              "WhenOpened": "2025-12-06T14:14:48.041Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MLStudentAnalysisController.cs",
+              "DocumentMoniker": "D:\\edu-test\\back-end\\WebApplication1\\Controllers\\MLStudentAnalysisController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MLStudentAnalysisController.cs",
+              "ToolTip": "D:\\edu-test\\back-end\\WebApplication1\\Controllers\\MLStudentAnalysisController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\MLStudentAnalysisController.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAD4v7UAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:01:10.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\backend\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\backend\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "DocumentIndex": 1,
+              "Title": "StudentAnalysis.cs",
+              "DocumentMoniker": "D:\\edu-test\\back-end\\WebApplication1\\Models\\MLModule\\StudentAnalysis.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\MLModule\\StudentAnalysis.cs",
+              "ToolTip": "D:\\edu-test\\back-end\\WebApplication1\\Models\\MLModule\\StudentAnalysis.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\MLModule\\StudentAnalysis.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:15:42.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Test.cs",
-              "DocumentMoniker": "D:\\backend\\WebApplication1\\Models\\Test\\Test.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Test\\Test.cs",
-              "ToolTip": "D:\\backend\\WebApplication1\\Models\\Test\\Test.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Test\\Test.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T13:06:52.671Z"
+              "WhenOpened": "2025-12-05T15:44:37.492Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Question.cs",
-              "DocumentMoniker": "D:\\backend\\WebApplication1\\Models\\Test\\Question.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Test\\Question.cs",
-              "ToolTip": "D:\\backend\\WebApplication1\\Models\\Test\\Question.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Test\\Question.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\edu-test\\back-end\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\edu-test\\back-end\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAEwCQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T13:04:29.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TestsController.cs",
-              "DocumentMoniker": "D:\\backend\\WebApplication1\\Controllers\\TestsController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TestsController.cs",
-              "ToolTip": "D:\\backend\\WebApplication1\\Controllers\\TestsController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\TestsController.cs",
-              "ViewState": "AQIAAFkCAAAAAAAAAADwvyIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T16:03:29.981Z"
+              "WhenOpened": "2024-05-30T08:15:42.482Z"
             }
           ]
         }

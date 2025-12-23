@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { Button } from "antd";
 
-
 export default function Header() {
   const { isAuthenticated, logout, user } = useAuth();
 
@@ -41,6 +40,14 @@ export default function Header() {
                     Tests Grades
                   </Link>
                 </li>
+
+                {/* 🔥 НОВЕ ПОСИЛАННЯ ДЛЯ ВЧИТЕЛЯ */}
+                <li className="nav-item mx-3">
+                  <Link className="nav-link" to="/student-performance">
+                    Student Performance
+                  </Link>
+                </li>
+
                 <li className="nav-item mx-3">
                   <Link className="nav-link" to="/tests-list">
                     Tests List
@@ -67,19 +74,32 @@ export default function Header() {
       <form className="form-inline">
         {isAuthenticated ? (
           <Link to="/login">
-            <Button  danger style={{height: "35px", fontSize: "16px"}} onClick={logout}>
+            <Button
+              danger
+              style={{ height: "35px", fontSize: "16px" }}
+              onClick={logout}
+            >
               Logout
             </Button>
           </Link>
         ) : (
           <>
             <Link to="/login">
-              <Button style={{marginRight: "10px", height: "35px", fontSize: "16px"}}>
+              <Button
+                style={{
+                  marginRight: "10px",
+                  height: "35px",
+                  fontSize: "16px",
+                }}
+              >
                 Login
               </Button>
             </Link>
             <Link to="/registration">
-              <Button type="primary" style={{height: "35px", fontSize: "16px"}}>
+              <Button
+                type="primary"
+                style={{ height: "35px", fontSize: "16px" }}
+              >
                 Sign Up
               </Button>
             </Link>

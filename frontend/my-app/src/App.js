@@ -17,6 +17,7 @@ import TestDetailsPage from "./components/tests/tests_lists/TestDetailsPage";
 import NotFoundPage from "./components/main_elements/NotFoundPage";
 import AuthRedirect from "./components/main_elements/AuthRedirect";
 import TeacherGradesPage from "./components/profiles/TeacherGradesPage";
+import StudentPerformanceAnalysisPage from  "./components/profiles/StudentPerformanceAnalysisPage"
 
 const queryClient = new QueryClient(); // Create a client
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/stud-tests-list" element={<StudentTestsListPage />} />
           <Route path="/test-details/:testId" element={<TestDetailsPage />} />
           <Route path="/teacher-grades" element={<TeacherGradesPage />} />
+          <Route path="/student-performance" element={<StudentPerformanceAnalysisPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
